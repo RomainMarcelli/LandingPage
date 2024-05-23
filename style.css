@@ -481,9 +481,25 @@ h2 {
 
 }
 
+#engagements .img_validation {
+    height: 196px;
+    width: 134px;
+}
+
+#engagements .img_main{
+    height: 196px;
+    width: 181px;
+}
+
+#engagements .img_froid {
+    height: 196px;
+    width: 234px;
+}
+
 #engagements h2 {
     margin-bottom: 55px;
     margin-top: 0px;
+    color: #FEF1E6;
 }
 
 #engagements>div {
