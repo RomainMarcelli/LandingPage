@@ -1,7 +1,7 @@
 @media (max-width: 1240px) {
 
     #logo_img {
-        content: url('img/logo_responsive.png');
+        content: url('../img/logo_responsive.png');
     }
 
     .logo_burger {
@@ -295,4 +295,52 @@
         margin-bottom: 90px;
     }
 
+}
+
+
+/* Pour le filtre */
+
+@media (max-width: 1080px) {
+    .bar_filtre{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .title_page{
+        display: none;
+    }
+
+    .complet {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trier {
+        border: 2px solid;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .elements{
+        display: none;
+    }
+
+    .filtrer {
+        border: 2px solid #B05A0E;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .filtrer p {
+        display: none;
+    }
+
+    #produits{
+        justify-content: space-evenly;
+        width: auto;
+    }
 }
