@@ -14,3 +14,9 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+document.getElementById('trier-toggle').addEventListener('click', function() {
+  document.querySelectorAll('.elements').forEach(function(element) {
+      element.classList.toggle('visible');
+  });
+});

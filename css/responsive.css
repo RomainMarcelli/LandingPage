@@ -9,7 +9,7 @@
         align-items: center;
     }
 
-    .icon_burger{
+    .icon_burger {
         display: none;
     }
 
@@ -34,15 +34,17 @@
         background-color: #FEF1E6;
         /* padding-top: 60px; */
         transition: left 0.5s ease;
-        overflow-y: scroll; /* Permet le défilement vertical */
+        overflow-y: scroll;
+        /* Permet le défilement vertical */
         scrollbar-color: #FEF1E6;
 
     }
+
     #openBtn {
         margin-left: 25px;
     }
 
-    /* Sidenav menu links */    
+    /* Sidenav menu links */
     .sidenav a {
         padding: 8px 8px 20px 32px;
         text-decoration: none;
@@ -97,7 +99,7 @@
 /* Media queries pour ajuster la présentation en fonction de la taille de l'écran */
 
 @media (max-width: 1160px) {
-    .all_plans{
+    .all_plans {
         padding-right: 20px;
         border-radius: 0;
     }
@@ -121,36 +123,43 @@
 }
 
 @media (max-width: 800px) {
-    #produits, #bons-plans {
-      display: flex;
-      flex-direction: row; /* Aligner les éléments horizontalement */
-      flex-wrap: nowrap; /* Empêche le retour à la ligne */
-      min-width: 250px; /* Défilement fluide */
-      overflow-x: auto; /* Permet le défilement horizontal */
-      justify-content: flex-start; /* Les éléments commencent par la gauche */
-      scroll-behavior: smooth;
+
+    #produits,
+    #bons-plans {
+        display: flex;
+        flex-direction: row;
+        /* Aligner les éléments horizontalement */
+        flex-wrap: nowrap;
+        /* Empêche le retour à la ligne */
+        min-width: 250px;
+        /* Défilement fluide */
+        overflow-x: auto;
+        /* Permet le défilement horizontal */
+        justify-content: flex-start;
+        /* Les éléments commencent par la gauche */
+        scroll-behavior: smooth;
     }
 
-    .produit{
+    .produit {
         min-width: 200px;
     }
 
-    .square{
+    .square {
         margin: 0 20px;
     }
 
-    .pourcentage{
+    .pourcentage {
         position: sticky;
         top: 5%;
         margin-top: -18px;
         margin-left: 209px;
     }
 
-    .atelier-btn{
+    .atelier-btn {
         margin-top: 28px;
         margin-bottom: 0px;
     }
-  }
+}
 
 @media (max-width: 700px) {
 
@@ -165,7 +174,7 @@
         justify-content: space-between;
     }
 
-    #selection{
+    #selection {
         width: 100%;
         border-radius: 0%;
         margin: 20px 0;
@@ -173,27 +182,28 @@
         justify-content: center;
     }
 
-    .icon_burger{
+    .icon_burger {
         display: block;
     }
-    .icon_burger img{
+
+    .icon_burger img {
         width: 18%;
     }
 
-    #btn_select{
+    #btn_select {
         margin: 0;
     }
 
 }
 
 @media (max-width: 600px) {
-    
+
     .produit {
         width: 80%;
         /* Les cartes prennent plus de place pour mieux utiliser l'espace disponible */
     }
 
-    
+
 }
 
 @media (max-width: 1180px) {
@@ -301,16 +311,19 @@
 /* Pour le filtre */
 
 @media (max-width: 1080px) {
-    .bar_filtre{
+    .bar_filtre {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        width: 90%;
+        padding: 0;
+        justify-content: center;
     }
 
-    .hidden{
+    .hidden {
         display: block;
     }
 
-    .title_page{
+    .title_page {
         display: none;
     }
 
@@ -319,28 +332,64 @@
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
     }
 
     .trier {
         border: 2px solid;
-        border-radius: 8px 0 0 8px;
+        margin: 0;
+        width: 50%;
+        border-radius: 0 12px 12px 0;
     }
 
-    .elements{
+    .elements {
         display: none;
     }
 
     .filtrer {
         border: 2px solid #B05A0E;
-        border-radius: 0 8px 8px 0;
+        width: 43%;
+        border-radius: 12px 0px 0px 12px;
+    }
+
+    .filtrer h4,
+    .trier h4 {
+        margin: 0;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #EC7815;
+        text-transform: none;
+        font-family: 'Poppins';
+        font-weight: 500;
+        line-height: 15px;
+        text-align: center;
+
+    }
+
+    .filtrer svg,
+    .trier svg {
+        display: block;
+        fill: #B05A0E;
+        width: 20px;
+        margin-left: 10px;
     }
 
     .filtrer p {
         display: none;
     }
 
-    #produits{
+    #produits {
         justify-content: space-evenly;
         width: auto;
     }
 }
+
+@media (max-width: 800px) {
+    .complet #produits {
+            flex-wrap: wrap;
+    }
+}
+
+
