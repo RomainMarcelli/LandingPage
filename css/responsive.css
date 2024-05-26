@@ -258,6 +258,11 @@
         margin: 110px auto 0 auto;
     }
 
+    .txt h3 {
+        width: auto;
+        margin: auto;
+    }
+
     #atelier-title {
         font-size: 6vw;
     }
@@ -338,8 +343,8 @@
     .trier {
         border: 2px solid;
         margin: 0;
-        width: 50%;
-        border-radius: 0 12px 12px 0;
+        width: 46%;
+        border-radius: 0 16px 16px 0;
     }
 
     .elements {
@@ -348,8 +353,9 @@
 
     .filtrer {
         border: 2px solid #B05A0E;
-        width: 43%;
-        border-radius: 12px 0px 0px 12px;
+        width: 46%;
+        height: 50px;
+        border-radius: 16px 0px 0px 16px;
     }
 
     .filtrer h4,
